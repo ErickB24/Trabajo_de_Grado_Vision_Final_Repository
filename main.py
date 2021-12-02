@@ -240,7 +240,7 @@ def callback():
         
         
     
-
+#---------------------------------------ENVIO FLASK ------------------------------------- 
 def obtener_mapa():
     global mapa
     while True:
@@ -267,7 +267,7 @@ def run_flask():
     app.run(host="0.0.0.0")
 
 
-#---------------------------------------ENVIO FLASK -------------------------------------    
+   
 @app.route("/streaming_camara")
 def streaming_camara():
     return Response(obtener_mapa(), mimetype='multipart/x-mixed-replace; boundary=frame')
@@ -424,7 +424,7 @@ btnsectorizacion = Button(Inicio, text="Selección de área", borderwidth=3, rel
 btnsectorizacion.place(x=950, y=600)
 
 
-#------------------------------------------------------------ INICIAR TRACKER Y DETECTOR --------------------------------------------------------------------------
+#------------------------------------------------------------ INICILIZAR TRACKER Y DETECTOR --------------------------------------------------------------------------
 mobilenet = jetson.inference.detectNet("ssd-mobilenet-v2")
 tracker = CentroidTracker(maxDisappeared=10, maxDistance=100)
 
@@ -476,4 +476,3 @@ hilo1 = threading.Thread(target=run_flask)
 hilo1.start()
 Inicio.mainloop()
 
-#hilo2.start()
