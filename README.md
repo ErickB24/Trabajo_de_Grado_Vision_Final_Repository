@@ -1,1 +1,1 @@
-# Trabajo_de_Grado_Vision_Final_Repository
+# Trabajo de Grado: DETECCIÓN SEGUIMIENTO Y GENERACION DE MAPA DE CALOR A TRAVES DE PROCESAMIENTO DE IMAGENES
